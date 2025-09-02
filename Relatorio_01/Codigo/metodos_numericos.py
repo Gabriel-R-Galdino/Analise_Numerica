@@ -6,7 +6,7 @@ from sympy import symbols, sympify, lambdify, diff
 class CalculadoraNumerica:
     """
     Classe que encapsula métodos numéricos para encontrar raízes de funções,
-    gerando relatórios detalhados para cada execução.
+    gerando relatórios para cada execução.
     """
     def __init__(self, filename):
         """
@@ -47,7 +47,7 @@ class CalculadoraNumerica:
         file.write(f"Tempo de execucao:   {tempo:.6f} segundos\n")
 
     def bissecao(self):
-        """Executa o método da Bisseção e gera um relatório detalhado."""
+        """Executa o método da Bisseção e gera o relatório."""
         if self.f(self.a) * self.f(self.b) >= 0:
             print("\nAVISO: Não há garantia de raiz no intervalo para o método da Bissecção.")
             return
@@ -82,7 +82,7 @@ class CalculadoraNumerica:
         print("\nO método não convergiu no número máximo de iterações.")
 
     def falsa_posicao(self):
-        """Executa o método da Posição Falsa e gera um relatório detalhado."""
+        """Executa o método da Posição Falsa e gera o relatório."""
         if self.f(self.a) * self.f(self.b) >= 0:
             print("\nAVISO: Não há garantia de raiz no intervalo para o método da Posição Falsa.")
             return
@@ -120,7 +120,7 @@ class CalculadoraNumerica:
         print("\nO método não convergiu no número máximo de iterações.")
 
     def newton_raphson(self):
-        """Executa o método de Newton-Raphson e gera um relatório detalhado."""
+        """Executa o método de Newton-Raphson e gera o relatório"""
         x = (self.a + self.b) / 2
         output_filename = os.path.join("output", "newton_raphson_saida.txt")
         start_time = time.time()
@@ -156,7 +156,7 @@ class CalculadoraNumerica:
         print("\nO método não convergiu no número máximo de iterações.")
 
     def secante(self):
-        """Executa o método da Secante e gera um relatório detalhado."""
+        """Executa o método da Secante e gera o relatório."""
         x0, x1 = self.a, self.b
         output_filename = os.path.join("output", "secante_saida.txt")
         start_time = time.time()
@@ -191,7 +191,7 @@ class CalculadoraNumerica:
         print("\nO método não convergiu no número máximo de iterações.")
 
 def main():
-    """Função principal que exibe o menu e gerencia a execução."""
+    """Função principal que exibe o menu"""
     while True:
         print("\n--- Calculadora de Métodos Numéricos ---")
         print("1. Bissecção")

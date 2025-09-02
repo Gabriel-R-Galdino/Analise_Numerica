@@ -33,4 +33,4 @@ Iter |            a |            b |     c (raiz) |            f(c) |      Erro 
 Raiz encontrada:     1.52137965
 Erro final estimado: 5.96e-08
 Numero de iteracoes: 24
-Tempo de execucao:   0.000730 segundos
+Tempo de execucao:   0.000027 segundos
