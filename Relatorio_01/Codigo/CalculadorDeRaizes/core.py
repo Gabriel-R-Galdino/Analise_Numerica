@@ -6,10 +6,9 @@ from sympy import symbols, sympify, lambdify, diff
 from . import metodos
 from . import relatorios
 
-class CalculadoraNumerica:
+class CalculadorDeRaizes:
     def __init__(self, filename):
         try:
-            # A lógica de ler o arquivo e preparar a função continua aqui.
             input_path = os.path.join('input', filename)
             with open(input_path, 'r', encoding='utf-8') as f:
                 self.func_str = f.readline().strip()

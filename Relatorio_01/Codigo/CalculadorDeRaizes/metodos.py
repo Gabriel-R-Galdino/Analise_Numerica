@@ -1,5 +1,5 @@
 """
-Módulo contendo a implementação pura dos algoritmos numéricos.
+Módulo contendo a implementação dos algoritmos numéricos.
 Cada função retorna uma tupla: (lista de passos, dicionário de resumo).
 """
 

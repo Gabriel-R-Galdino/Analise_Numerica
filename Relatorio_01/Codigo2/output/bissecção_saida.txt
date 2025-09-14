@@ -1,4 +1,0 @@
-Raiz encontrada: 1.1093792691826825
-Erro final: 6.705522581640366e-09
-Numero de iteracoes: 26
-Tempo de execu��o: 0.000031 segundos

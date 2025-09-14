@@ -1,0 +1,11 @@
+--- Relatorio do Metodo de Eliminacao de Gauss ---
+Matriz A:
+[[14.  4.  4.]
+ [ 4.  7. 19.]
+ [ 4.  7. 18.]]
+
+Vetor b:
+[100. 100. 100.]
+
+Solucao (x): [3.65854 12.19512 0.00000]
+Tempo de execucao: 0.000192 segundos
