@@ -1,7 +1,7 @@
 import os
 import sys
 import time
-from sympy import symbols, sympify, lambdify, diff
+from sympy import symbols, sympify, lambdify, diff, E
 
 from . import metodos
 from . import relatorios
@@ -18,9 +18,17 @@ class CalculadorDeRaizes:
                 self.tolerance = float(tolerancia_str) if tolerancia_str else 1e-8
             
             x = symbols('x')
-            sym_func = sympify(self.func_str.replace('^', '**'))
+            
+            # Isso garante que 'e' seja interpretado como o número de Euler
+            locals_dict = {
+                "e": E
+            }
+            
+            # Use o dicionário 'locals' ao converter a string
+            sym_func = sympify(self.func_str.replace('^', '**'), locals=locals_dict)
             sym_deriv = diff(sym_func, x)
             
+            # Agora lambdify criará uma função puramente numérica
             self.f = lambdify(x, sym_func, 'numpy')
             self.f_prime = lambdify(x, sym_deriv, 'numpy')
 

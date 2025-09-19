@@ -5,7 +5,7 @@ Cada função retorna uma tupla: (lista de passos, dicionário de resumo).
 
 def bissecao(f, a, b, tolerance):
     """Executa o método da Bisseção."""
-    if f(a) * f(b) >= 0:
+    if float(f(a) * f(b)) >= 0:
         return None, None # Sinaliza que não há garantia de raiz
 
     passos = []
@@ -29,7 +29,7 @@ def bissecao(f, a, b, tolerance):
 
 def falsa_posicao(f, a, b, tolerance):
     """Executa o método da Posição Falsa."""
-    if f(a) * f(b) >= 0:
+    if float(f(a) * f(b)) >= 0:
         return None, None
 
     passos = []
