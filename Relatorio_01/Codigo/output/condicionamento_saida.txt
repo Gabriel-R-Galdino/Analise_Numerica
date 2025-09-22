@@ -40,4 +40,4 @@ Matriz Inversa A⁻¹:
 Norma da Matriz Inversa (norma-inf): 1.01840
 
 ------------------------------------------------------------
-Tempo de execução: 0.000599 segundos
+Tempo de execução: 0.002757 segundos

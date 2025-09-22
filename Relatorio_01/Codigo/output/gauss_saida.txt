@@ -8,4 +8,4 @@ Vetor b:
 [100. 100. 100.]
 
 Solucao (x): [3.65854 12.19512 0.00000]
-Tempo de execucao: 0.000192 segundos
+Tempo de execucao: 0.007031 segundos
