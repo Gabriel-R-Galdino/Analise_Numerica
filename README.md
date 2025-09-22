@@ -1,20 +1,30 @@
-# Analise_Numerica
-Relatórios de Analise Numérica 
+# Relatórios de Analise Numérica 
 
-## 1º Relatório
+## [1º Relatório](https://github.com/Gabriel-R-Galdino/Analise_Numerica/tree/main/Relatorio_01)
 
 ### 🎯 Métodos Implementados
-Raízes de funções Reais: 
-- Bissecção;
-- Posição Falsa;
-- Newton - Raphson;
-- Secante;
-Sistemas Lineares:
-- Eliminação de Gauss;
-- Fatoração LU;
-- Jacobi;
-- Gauss-Seidel
-- Condição da Matriz
+
+#### 1. Raízes de Funções Reais
+
+Métodos para encontrar o valor de x para o qual f(x)=0.
+
+-   **Bissecção**
+-   **Posição Falsa**
+-   **Newton-Raphson**
+-   **Secante**
+
+#### 2. Sistemas de Equações Lineares
+
+Algoritmos para encontrar o vetor x que satisfaz a equação Ax=b.
+
+-   **Eliminação de Gauss**
+-   **Fatoração LU**
+-   **Jacobi**
+-   **Gauss-Seidel**
+
+#### 3. Análise de Matrizes
+
+-   **Condição da Matriz**
 
 ## 🎓 Informações Acadêmicas
 
