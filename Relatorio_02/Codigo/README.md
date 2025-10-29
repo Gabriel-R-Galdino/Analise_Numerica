@@ -11,19 +11,31 @@ A calculadora foi expandida com os seguintes módulos:
 
 ### 1. Aproximação de Funções e Regressão
 
-Métodos para encontrar a curva que melhor se ajusta a um conjunto de dados ou a uma função contínua.- **Regressão Linear**: Encontra a reta ($y = ax + b$) que minimiza o erro quadrático para um conjunto de pontos.- **Aproximação Polinomial (Caso Discreto)**: Encontra um polinômio de grau $N$ que melhor se ajusta a um conjunto de pontos.- **Aproximação Polinomial (Caso Contínuo)**: Encontra um polinômio que melhor aproxima uma função contínua $f(x)$ dentro de um intervalo.
+Métodos para encontrar a curva que melhor se ajusta a um conjunto de dados ou a uma função contínua.
+- **Regressão Linear**: Encontra a reta ($y = ax + b$) que minimiza o erro quadrático para um conjunto de pontos.
+- **Aproximação Polinomial (Caso Discreto)**: Encontra um polinômio de grau $N$ que melhor se ajusta a um conjunto de pontos.
+- **Aproximação Polinomial (Caso Contínuo)**: Encontra um polinômio que melhor aproxima uma função contínua $f(x)$ dentro de um intervalo.
 
 ### 2. Interpolação Polinomial
 
-Algoritmos para encontrar um polinômio que passa _exatamente_ por um conjunto de pontos.- **Polinômios de Lagrange**: Método direto para construir o polinômio interpolador.- **Diferenças Divididas de Newton**: Método incremental e computacionalmente eficiente para construir o polinômio.
+Algoritmos para encontrar um polinômio que passa _exatamente_ por um conjunto de pontos.
+- **Polinômios de Lagrange**: Método direto para construir o polinômio interpolador.
+- **Diferenças Divididas de Newton**: Método incremental e computacionalmente eficiente para construir o polinômio.
 
 ### 3. Derivação Numérica
 
-Técnicas para estimar a derivada de uma função em um ponto específico.- **Diferenças Finitas (1ª Ordem)**: Estima a **primeira derivada** em um ponto usando a fórmula de diferença central.- **Diferenças Finitas (2ª Ordem)**: Estima a **segunda derivada** em um ponto.
+Técnicas para estimar a derivada de uma função em um ponto específico.
+- **Diferenças Finitas (1ª Ordem)**: Estima a **primeira derivada** em um ponto usando a fórmula de diferença central.
+- **Diferenças Finitas (2ª Ordem)**: Estima a **segunda derivada** em um ponto.
 
 ### 4. Integração Numérica
 
-Métodos para calcular a integral definida de uma função (a área sob a curva).- **Regra dos Trapézios (Simples e Múltipla)**: Aproxima a área sob a curva dividindo-a em trapézios.- **Regra 1/3 de Simpson (Simples e Múltipla)**: Aproximação mais precisa que utiliza parábolas para modelar a curva.- **Regra 3/8 de Simpson (Simples e Múltipla)**: Alternativa para quando o número de intervalos é múltiplo de 3.- **Extrapolação de Richards**: Técnica para melhorar a precisão de outros métodos de integração, combinando estimativas de diferentes tamanhos de passo.- **Quadratura de Gauss-Legendre**: Método de alta precisão que avalia a função em pontos não igualmente espaçados (pontos de Gauss) para otimizar o resultado.
+Métodos para calcular a integral definida de uma função (a área sob a curva).
+- **Regra dos Trapézios (Simples e Múltipla)**: Aproxima a área sob a curva dividindo-a em trapézios.
+- **Regra 1/3 de Simpson (Simples e Múltipla)**: Aproximação mais precisa que utiliza parábolas para modelar a curva.
+- **Regra 3/8 de Simpson (Simples e Múltipla)**: Alternativa para quando o número de intervalos é múltiplo de 3.
+- **Extrapolação de Richards**: Técnica para melhorar a precisão de outros métodos de integração, combinando estimativas de diferentes tamanhos de passo.
+- **Quadratura de Gauss-Legendre**: Método de alta precisão que avalia a função em pontos não igualmente espaçados (pontos de Gauss) para otimizar o resultado.
 
 ## 📁 Estrutura de Pastas
 
