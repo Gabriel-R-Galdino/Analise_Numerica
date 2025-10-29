@@ -2,6 +2,7 @@
 
 ## 📝 Relatórios 
 - [1º Relatório](https://github.com/Gabriel-R-Galdino/Analise_Numerica/tree/main/Relatorio_01)
+- [2º Relatório](https://github.com/Gabriel-R-Galdino/Analise_Numerica/tree/main/Relatorio_02) 
 
 ## 🎯 Métodos Implementados
 
