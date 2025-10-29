@@ -47,9 +47,9 @@ def continuous_polynomial_approximation(func_str, interval):
     num_basis = len(basis_functions)
     
     # Converte a string da função em uma função sympy
-    # (Similar ao seu 'CalculadorDeRaizes/core.py')
     locals_dict = {"e": E, "x": x}
-    func = sympify(func_str.replace('^', '**'), locals=locals_dict)
+    processed_str = func_str.replace('^', '**').replace('math.e', 'e')
+    func = sympify(processed_str, locals=locals_dict)
 
     matrix_M = zeros(num_basis)
     vector_F = zeros(num_basis, 1)
