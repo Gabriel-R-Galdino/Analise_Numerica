@@ -28,36 +28,36 @@ Métodos para calcular a integral definida de uma função (a área sob a curva)
 ## 📁 Estrutura de Pastas
 
 O projeto segue a mesma arquitetura modular do primeiro relatório:
-.
-├── Codigo/
-│ ├── AproximacaoRegressao/ # Módulo de Aproximação e Regressão
-│ │ ├── init.py
-│ │ ├── core.py # Lógica principal e leitura de ficheiros
-│ │ ├── metodos.py # Implementação dos algoritmos
-│ │ └── relatorios.py # Geração dos relatórios de saída
-│ ├── DerivacaoNumerica/ # Módulo de Derivação
-│ │ ├── init.py
-│ │ ├── core.py # Lógica principal e leitura de ficheiros
-│ │ ├── metodos.py # Implementação dos algoritmos
-│ │ └── relatorios.py # Geração dos relatórios de saída
-│ ├── IntegracaoNumerica/ # Módulo de Integração
-│ │ ├── init.py
-│ │ ├── core.py # Lógica principal e leitura de ficheiros
-│ │ ├── metodos.py # Implementação dos algoritmos
-│ │ └── relatorios.py # Geração dos relatórios de saída
-│ ├── Interpolacao/ # Módulo de Interpolação
-│ │ ├── init.py
-│ │ ├── core.py # Lógica principal e leitura de ficheiros
-│ │ ├── metodos.py # Implementação dos algoritmos
-│ │ └── relatorios.py # Geração dos relatórios de saída
-│ ├── Input/ # Pasta para os ficheiros de entrada
-│ │ ├── entrada_aprox_regr.txt
-│ │ └── ...
-│ ├── output/ # Pasta para os relatórios gerados
-│ │ └── ...
-│ ├── main.py # Ponto de entrada (menu interativo)
-│ └── requirements.txt # Dependências do projeto
-│ └── README.md # Este ficheiro
+    .
+    ├── Codigo/
+    │ ├── AproximacaoRegressao/ # Módulo de Aproximação e Regressão
+    │ │ ├── init.py
+    │ │ ├── core.py             # Lógica principal e leitura de ficheiros
+    │ │ ├── metodos.py          # Implementação dos algoritmos
+    │ │ └── relatorios.py       # Geração dos relatórios de saída
+    │ ├── DerivacaoNumerica/    # Módulo de Derivação
+    │ │ ├── init.py
+    │ │ ├── core.py             # Lógica principal e leitura de ficheiros
+    │ │ ├── metodos.py          # Implementação dos algoritmos
+    │ │ └── relatorios.py       # Geração dos relatórios de saída
+    │ ├── IntegracaoNumerica/   # Módulo de Integração
+    │ │ ├── init.py
+    │ │ ├── core.py             # Lógica principal e leitura de ficheiros
+    │ │ ├── metodos.py          # Implementação dos algoritmos
+    │ │ └── relatorios.py       # Geração dos relatórios de saída
+    │ ├── Interpolacao/         # Módulo de Interpolação
+    │ │ ├── init.py
+    │ │ ├── core.py             # Lógica principal e leitura de ficheiros
+    │ │ ├── metodos.py          # Implementação dos algoritmos
+    │ │ └── relatorios.py       # Geração dos relatórios de saída
+    │ ├── Input/                # Pasta para os ficheiros de entrada
+    │ │ ├── entrada_aprox_regr.txt
+    │ │ └── ...
+    │ ├── output/               # Pasta para os relatórios gerados
+    │ │ └── ...
+    │ ├── main.py               # Ponto de entrada (menu interativo)
+    │ └── requirements.txt      # Dependências do projeto
+    └── README.md             # Este ficheiro
 
 ## ▶️ Como Compilar e Executar
 
