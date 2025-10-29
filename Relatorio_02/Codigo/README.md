@@ -28,6 +28,7 @@ Métodos para calcular a integral definida de uma função (a área sob a curva)
 ## 📁 Estrutura de Pastas
 
 O projeto segue a mesma arquitetura modular do primeiro relatório:
+```
     .
     ├── Codigo/
     │ ├── AproximacaoRegressao/ # Módulo de Aproximação e Regressão
@@ -57,8 +58,8 @@ O projeto segue a mesma arquitetura modular do primeiro relatório:
     │ │ └── ...
     │ ├── main.py               # Ponto de entrada (menu interativo)
     │ └── requirements.txt      # Dependências do projeto
-    └── README.md             # Este ficheiro
-
+    └── README.md               # Este ficheiro
+```
 ## ▶️ Como Compilar e Executar
 
 ### ✅ Requisitos
