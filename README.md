@@ -28,6 +28,39 @@ Algoritmos para encontrar o vetor x que satisfaz a equação Ax=b.
 
 -   **Condição da Matriz**
 
+### 4. Aproximação de Funções e Regressão
+
+Métodos para encontrar a curva que melhor se ajusta a um conjunto de dados ou a uma função contínua.
+
+- **Regressão Linear**
+- **Aproximação Polinomial (Caso Discreto)**
+- **Aproximação Polinomial (Caso Contínuo)**
+
+### 5. Interpolação Polinomial
+
+Algoritmos para encontrar um polinômio que passa _exatamente_ por um conjunto de pontos.
+
+- **Polinômios de Lagrange**
+- **Diferenças Divididas de Newton**
+
+### 6. Derivação Numérica
+
+Técnicas para estimar a derivada de uma função em um ponto específico.
+
+- **Diferenças Finitas (1ª Ordem)**
+- **Diferenças Finitas (2ª Ordem)**
+
+### 7. Integração Numérica
+
+Métodos para calcular a integral definida de uma função (a área sob a curva).
+
+- **Regra dos Trapézios (Simples e Múltipla)**
+- **Regra 1/3 de Simpson (Simples e Múltipla)**
+- **Regra 3/8 de Simpson (Simples e Múltipla)**
+- **Extrapolação de Richards**
+- **Quadratura de Gauss-Legendre**
+
+
 ## 🎓 Informações Acadêmicas
 
 -   **Disciplina**: Análise Numérica
