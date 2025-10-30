@@ -1,14 +1,28 @@
 import math
+import numpy as np
 
 def _function(x_value, f_str):
     """Função auxiliar para avaliar a string da função."""
+    allowed_names = {
+        'x': x_value,
+        'sin': np.sin,
+        'cos': np.cos,
+        'tan': np.tan,
+        'exp': np.exp,
+        'log': np.log,
+        'sqrt': np.sqrt,
+        'pi': np.pi,
+        'e': np.e,
+        'abs': abs,
+        'pow': pow,
+    }
     # Mantém a lógica original do eval
-    return eval(f_str, {"x": x_value, "math": math})
+    return eval(f_str, {"__builtins__": None}, allowed_names)
 
 def finite_difference_first_order(func_str, x_value):
     """Calcula a derivada de 1ª ordem."""
-    h = 1.0  # Valor de h do seu código original
-    
+    h = 1e-5  # Valor de h do seu código original
+    print(h)
     func_plus_h = _function(x_value + h, func_str)
     func_minus_h = _function(x_value - h, func_str)
     
@@ -17,7 +31,7 @@ def finite_difference_first_order(func_str, x_value):
 
 def finite_difference_second_order(func_str, x_value):
     """Calcula a derivada de 2ª ordem."""
-    h = 0.1  # Valor de h do seu código original
+    h = 1e-5  # Valor de h do seu código original
     
     func_plus_h = _function(x_value + h, func_str)
     func_minus_h = _function(x_value - h, func_str)

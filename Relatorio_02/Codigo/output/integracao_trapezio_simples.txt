@@ -1,0 +1,17 @@
+--- Relatório de Regra do Trapézio Simples ---
+
+Integral da função 1: 2.169742987090866e+20
+Integral da função 2: 2.3867949727108524e+20
+Integral da função 3: 2.44105796934993e+20
+Integral da função 4: 2.6038469597366498e+20
+Integral da função 5: 2.712372953670617e+20
+Integral da função 6: 2.820898947842079e+20
+Integral da função 7: 2.983687939489415e+20
+Integral da função 8: 3.037950936797933e+20
+Integral da função 9: 3.2550029264325404e+20
+Integral da função 10: 2632354.3599
+Integral da função 11: 17773483716.8397
+Integral da função 12: 0.4301
+
+--------------------------------------------------
+Tempo de execucao: 0.012717 segundos

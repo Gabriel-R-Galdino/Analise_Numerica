@@ -3,7 +3,20 @@ import numpy as np
 
 def _function(x_value, f_str):
     """Função auxiliar para avaliar a string da função."""
-    return eval(f_str, {"x": x_value, "math": math})
+    allowed_names = {
+        'x': x_value,
+        'sin': np.sin,
+        'cos': np.cos,
+        'tan': np.tan,
+        'exp': np.exp,
+        'log': np.log,
+        'sqrt': np.sqrt,
+        'pi': np.pi,
+        'e': np.e,
+        'abs': abs,
+        'pow': pow,
+    }
+    return eval(f_str, {"__builtins__": None}, allowed_names)
 
 def trapezoidal(func_str, a, b, n):
     """Regra dos Trapézios (Simples/Múltipla)."""
@@ -83,17 +96,27 @@ def richards_extrapolation(func_str, a, b, n_ignored):
     richardson_result = ((4 / 3) * integral_n2) - ((1 / 3) * integral_n1)
     return round(richardson_result, 4)
 
-def gaussian_quadrature(func_str, a, b, n_ignored):
-    """Quadratura de Gauss (2 pontos)."""
-    pontos_gauss = [-math.sqrt(3)/3, math.sqrt(3)/3]
-    pesos_gauss = [1, 1]
+def gaussian_quadrature(func_str, a, b, n):
+    """Quadratura de Gauss-Legendre (n pontos)."""
+    try:
+        # 'n' vem do arquivo de entrada, precisamos garantir que é um inteiro
+        n = int(n) 
+        if n <= 0:
+            print(f"Aviso: N={n} é inválido para Quadratura de Gauss. Usando n=1.")
+            n = 1
+            
+    except ValueError:
+        print(f"Aviso: N={n} não é um inteiro. Usando n=1.")
+        n = 1
 
-    # Mudança de variável
-    t = lambda u: 0.5 * (b - a) * u + 0.5 * (a + b)
-
-    integral_value = 0
-    for i in range(len(pontos_gauss)):
-        integral_value += pesos_gauss[i] * _function(t(pontos_gauss[i]), func_str)
+    # Usa numpy para calcular os pontos (xi) e pesos (wi) para n pontos
+    xi, wi = np.polynomial.legendre.leggauss(n)
     
-    integral_value *= (b - a) / 2
-    return round(integral_value, 4)
+    integral_value = 0
+    for x, w in zip(xi, wi):
+        # Mudança de variável (t)
+        t = 0.5 * (b - a) * x + 0.5 * (b + a)
+        integral_value += w * _function(t, func_str)
+    
+    integral_value *= 0.5 * (b - a)
+    return round(integral_value, 8)
