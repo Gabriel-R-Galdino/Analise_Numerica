@@ -9,9 +9,8 @@ def gerar_relatorio_regressao_linear(filename, results, tempo):
         
         for idx, res in enumerate(results):
             b, a = res['b'], res['a']
-            # Lógica de formatação do seu arquivo original
             result_str = f"y = {b}*x + {a}" if a >= 0 else f"y = {b}*x - {abs(a)}"
-            file.write(f"Conjunto {idx+1}: {result_str}\n")
+            file.write(f"Caso {idx+1}: {result_str}\n")
             
         _escrever_sumario_tempo(file, tempo)
 

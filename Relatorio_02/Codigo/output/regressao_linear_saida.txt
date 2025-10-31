@@ -1,13 +1,13 @@
 --- Relatório de Regressão Linear ---
 
-Conjunto 1: y = 362.49*x - 709699.53
-Conjunto 2: y = -16.3*x + 33922.56
-Conjunto 3: y = 0.39*x + 0.53
-Conjunto 4: y = 37.38*x - 73791.84
-Conjunto 5: y = 22.05*x - 43319.83
-Conjunto 6: y = 0.2*x + 1.33
-Conjunto 7: y = 0.01*x - 0.62
-Conjunto 8: y = 1.86*x - 1.85
+Caso 1: y = 362.49*x - 709699.53
+Caso 2: y = -16.3*x + 33922.56
+Caso 3: y = 0.39*x + 0.53
+Caso 4: y = 37.38*x - 73791.84
+Caso 5: y = 22.05*x - 43319.83
+Caso 6: y = 0.2*x + 1.33
+Caso 7: y = 0.01*x - 0.62
+Caso 8: y = 1.86*x - 1.85
 
 --------------------------------------------------
-Tempo de execucao: 0.002276 segundos
+Tempo de execucao: 0.000053 segundos

@@ -1,17 +1,17 @@
 --- Relatório de Quadratura de Gauss ---
 
-Integral da função 1: 1.1803641414933117e+20
-Integral da função 2: 1.2984428181799272e+20
-Integral da função 3: 1.327962487478924e+20
-Integral da função 4: 1.4165214956313197e+20
-Integral da função 5: 1.4755608345860819e+20
-Integral da função 6: 1.5346001736700435e+20
-Integral da função 7: 1.6231591825082283e+20
-Integral da função 8: 1.652678852171408e+20
-Integral da função 9: 1.7707575310420214e+20
-Integral da função 10: 1634715.11543914
-Integral da função 11: 19007661997.71057
-Integral da função 12: 0.46506893
+Integral da função 1: 8.32222203019653e+19
+Integral da função 2: 9.1547422075501e+19
+Integral da função 3: 9.36287225278633e+19
+Integral da função 4: 9.987262390295773e+19
+Integral da função 5: 1.0403522483283647e+20
+Integral da função 6: 1.0819782577182455e+20
+Integral da função 7: 1.1444172719527087e+20
+Integral da função 8: 1.165230276733101e+20
+Integral da função 9: 1.2484822960082975e+20
+Integral da função 10: 1125533.94529517
+Integral da função 11: 19616390426.84804
+Integral da função 12: 0.47895345
 
 --------------------------------------------------
-Tempo de execucao: 0.010164 segundos
+Tempo de execucao: 0.028324 segundos

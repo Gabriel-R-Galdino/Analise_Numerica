@@ -1,0 +1,17 @@
+--- Relatório de Extrapolação de Richards ---
+
+Integral da função 1: 1.2780624643767242e+20
+Integral da função 2: 1.4059144714069572e+20
+Integral da função 3: 1.4378774733023986e+20
+Integral da função 4: 1.5337664792652684e+20
+Integral da função 5: 1.5976924834424488e+20
+Integral da função 6: 1.661618487759523e+20
+Integral da função 7: 1.7575074944649445e+20
+Integral da função 8: 1.7894704967547116e+20
+Integral da função 9: 1.917322506149712e+20
+Integral da função 10: 1627807.4168
+Integral da função 11: 19002088190.1786
+Integral da função 12: 0.4627
+
+--------------------------------------------------
+Tempo de execucao: 0.001637 segundos

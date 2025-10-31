@@ -1,4 +1,4 @@
---- Relatório de Regra do Trapézio Simples ---
+--- Relatório de Regra dos Trapézios Múltiplos ---
 
 Integral da função 1: 2.169742987090866e+20
 Integral da função 2: 2.3867949727108524e+20
@@ -14,4 +14,4 @@ Integral da função 11: 17773483716.8397
 Integral da função 12: 0.4301
 
 --------------------------------------------------
-Tempo de execucao: 0.007570 segundos
+Tempo de execucao: 0.000795 segundos

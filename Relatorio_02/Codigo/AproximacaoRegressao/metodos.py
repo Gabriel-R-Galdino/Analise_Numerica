@@ -47,7 +47,17 @@ def continuous_polynomial_approximation(func_str, interval):
     num_basis = len(basis_functions)
     
     # Converte a string da função em uma função sympy
-    locals_dict = {"e": E, "x": x}
+    locals_dict = { 'x': x,
+        'sin': np.sin,
+        'cos': np.cos,
+        'tan': np.tan,
+        'exp': np.exp,
+        'log': np.log,
+        'sqrt': np.sqrt,
+        'pi': np.pi,
+        'e': np.e,
+        'abs': abs,
+        'pow': pow, }
     processed_str = func_str.replace('^', '**').replace('math.e', 'e')
     func = sympify(processed_str, locals=locals_dict)
 

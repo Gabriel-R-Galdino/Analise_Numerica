@@ -21,7 +21,7 @@ def _function(x_value, f_str):
 def finite_difference_first_order(func_str, x_value):
     """Calcula a derivada de 1ª ordem."""
     h = 1e-5  
-    print(h)
+    
     func_plus_h = _function(x_value + h, func_str)
     func_minus_h = _function(x_value - h, func_str)
     

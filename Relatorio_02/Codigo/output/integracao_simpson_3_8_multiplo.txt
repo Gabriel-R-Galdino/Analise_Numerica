@@ -1,0 +1,17 @@
+--- Relatório de Regra de Simpson 3/8 Múltipla ---
+
+Integral da função 1: 1.2470380840701051e+20
+Integral da função 2: 1.3717865422522745e+20
+Integral da função 3: 1.4029736569323527e+20
+Integral da função 4: 1.49653500124242e+20
+Integral da função 5: 1.5589092309794973e+20
+Integral da função 6: 1.6212834608530725e+20
+Integral da função 7: 1.714844805887666e+20
+Integral da função 8: 1.7460319209524983e+20
+Integral da função 9: 1.8707803814420306e+20
+Integral da função 10: 1630142.6228
+Integral da função 11: 19004110685.3004
+Integral da função 12: 0.4635
+
+--------------------------------------------------
+Tempo de execucao: 0.000952 segundos

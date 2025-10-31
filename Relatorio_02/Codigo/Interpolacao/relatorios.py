@@ -8,6 +8,6 @@ def gerar_relatorio_interpolacao(filename, titulo_metodo, results, tempo):
         file.write(f"--- Relatório de {titulo_metodo} ---\n\n")
         
         for idx, poly_expr in enumerate(results):
-            file.write(f"Conjunto {idx+1}: {poly_expr}\n")
+            file.write(f"P(x) {idx+1}: {poly_expr}\n")
             
         _escrever_sumario_tempo(file, tempo)

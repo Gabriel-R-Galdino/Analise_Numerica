@@ -10,4 +10,4 @@ Função 7: y = 0.440000000000000
 Função 8: y = 0.8*x**2 - 1.73*x + 0.54
 
 --------------------------------------------------
-Tempo de execucao: 0.088419 segundos
+Tempo de execucao: 0.081988 segundos
