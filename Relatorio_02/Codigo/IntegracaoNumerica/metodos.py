@@ -29,7 +29,6 @@ def trapezoidal(func_str, a, b, n):
 
 def simpson_1_3_simple(func_str, a, b, n_ignored):
     """Regra de Simpson 1/3 Simples."""
-    # 'n' é ignorado para manter a lógica do seu 'simple_simpson_1_3_aux'
     h = (b - a) / 2
     func_at_a = _function(a, func_str)
     func_at_mid = _function((a + b) / 2, func_str)
@@ -54,7 +53,7 @@ def simpson_1_3_multiple(func_str, a, b, n):
     return round(integral_value, 4)
 
 def simpson_3_8_simple(func_str, a, b, n):
-    """Regra de Simpson 3/8 Simples (baseado na sua lógica original)."""
+    """Regra de Simpson 3/8 Simples."""
     if n % 3 != 0:
         n = n + (3 - (n % 3))  # Garante 'n' múltiplo de 3
     h = (b - a) / n
@@ -87,9 +86,6 @@ def simpson_3_8_multiple(func_str, a, b, n):
 
 def richards_extrapolation(func_str, a, b, n_ignored):
     """Extrapolação de Richards."""
-    # 'n' é ignorado. Usa a lógica original de chamar o 'simpson_1_3_simple'
-    # Nota: A lógica original tinha um bug aqui, pois chamava a mesma função
-    # com N=250 e N=500, mas a função ignora N. Mantive essa lógica.
     integral_n1 = simpson_1_3_simple(func_str, a, b, 250)
     integral_n2 = simpson_1_3_simple(func_str, a, b, 500)
 

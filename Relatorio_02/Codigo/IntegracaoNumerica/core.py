@@ -55,8 +55,6 @@ class CalculadorIntegracao:
     # --- Métodos de Integração ---
     
     def run_trapezoidal_simples(self):
-        # A lógica original do "simple_trapezoidal" usava 'n' subdivisões,
-        # então mantemos isso. Para um trapézio simples "real", forçaríamos n=1.
         self._run_method(
             metodos.trapezoidal, 
             "trapezio_simples", 

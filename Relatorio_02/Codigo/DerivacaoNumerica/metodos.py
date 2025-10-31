@@ -16,12 +16,11 @@ def _function(x_value, f_str):
         'abs': abs,
         'pow': pow,
     }
-    # Mantém a lógica original do eval
     return eval(f_str, {"__builtins__": None}, allowed_names)
 
 def finite_difference_first_order(func_str, x_value):
     """Calcula a derivada de 1ª ordem."""
-    h = 1e-5  # Valor de h do seu código original
+    h = 1e-5  
     print(h)
     func_plus_h = _function(x_value + h, func_str)
     func_minus_h = _function(x_value - h, func_str)
@@ -31,7 +30,7 @@ def finite_difference_first_order(func_str, x_value):
 
 def finite_difference_second_order(func_str, x_value):
     """Calcula a derivada de 2ª ordem."""
-    h = 1e-5  # Valor de h do seu código original
+    h = 1e-5 
     
     func_plus_h = _function(x_value + h, func_str)
     func_minus_h = _function(x_value - h, func_str)
