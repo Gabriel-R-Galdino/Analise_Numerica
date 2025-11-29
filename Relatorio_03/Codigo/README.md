@@ -1,4 +1,4 @@
-# 🧮 Calculadora de Análise Numérica (Relatório 02)
+# 🧮 Calculadora de Análise Numérica (Relatório 03)
 
 Este é um projeto desenvolvido para a disciplina de Análise Numérica, do
 curso de Ciência da Computação na Universidade Estadual de Santa Cruz (UESC).
