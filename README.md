@@ -3,6 +3,7 @@
 ## 📝 Relatórios 
 - [1º Relatório](https://github.com/Gabriel-R-Galdino/Analise_Numerica/tree/main/Relatorio_01)
 - [2º Relatório](https://github.com/Gabriel-R-Galdino/Analise_Numerica/tree/main/Relatorio_02) 
+- [3º Relatório](https://github.com/Gabriel-R-Galdino/Analise_Numerica/tree/main/Relatorio_03)
 
 ## 🎯 Métodos Implementados
 
@@ -60,6 +61,21 @@ Métodos para calcular a integral definida de uma função (a área sob a curva)
 - **Extrapolação de Richards**
 - **Quadratura de Gauss-Legendre**
 
+### 8. Equações Diferenciais Ordinárias (EDO)
+
+Métodos para a resolução numérica de equações diferenciais, abrangendo problemas de valor inicial e de contorno.
+
+**Problemas de Valor Inicial (PVI):**
+- **Método de Euler Simples**
+- **Método de Heun**
+- **Método de Euler Modificado**
+- **Método de Ralston**
+- **Runge-Kutta de 3ª Ordem**
+- **Runge-Kutta de 4ª Ordem (RK4)**
+
+**Problemas de Valor de Contorno (PVC):**
+- **Método do Shooting (Tiro)**
+- **Diferenças Finitas**
 
 ## 🎓 Informações Acadêmicas
 

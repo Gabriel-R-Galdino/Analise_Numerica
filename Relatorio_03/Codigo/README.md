@@ -94,7 +94,7 @@ O projeto segue uma arquitetura modular organizada por responsabilidade:
 
 6.  Siga as instruções do menu interativo:
 
-    - Escolha se deseja resolver um **PVI** (opções 1-6) ou um **PVC** (opções 7-8) ou gerar um Comparativo de Desempenho (opção 9).
+    - Escolha se deseja resolver um **PVI** (opções 1-6) ou um **PVC** (opções 7-8) ou gerar um Comparativo de Solução e Desempenho (opção 9), caso queira resolver todos os **PVI** de uma vez (opção 10) ou todos os **PVC** de uma vez (opção 11).
     - Digite o nome do arquivo de entrada quando solicitado.
 
 7.  Verifique os resultados:

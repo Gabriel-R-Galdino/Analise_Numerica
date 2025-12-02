@@ -81,8 +81,9 @@ class CalculadorEDO:
     # --- Gerar gráfico comparativo de tempos ---
     def run_comparativo(self):
         """
-        Executa todos os métodos disponíveis para o tipo de problema (PVI ou PVC),
-        coleta os tempos e gera um gráfico.
+        Executa todos os métodos disponíveis, coleta tempos e gera:
+        1. Gráfico de barras de tempo.
+        2. Gráfico de linhas com as soluções (trajetórias) para cada problema.
         """
         import time
         
@@ -104,33 +105,80 @@ class CalculadorEDO:
 
         nomes = []
         tempos = []
+        
+        # Estrutura para armazenar as soluções de cada problema
+        # { indice_problema: { "NomeMetodo": ([x...], [y...]) } }
+        solucoes_por_problema = {i: {} for i in range(len(self.problemas))}
 
         print(f"\n--- Iniciando Comparativo de Desempenho ({self.tipo_problema}) ---")
-        print(f"Processando {len(self.problemas)} problema(s) com {len(lista_metodos)} métodos diferentes...\n")
+        print(f"Processando {len(self.problemas)} problema(s) com {len(lista_metodos)} métodos...\n")
 
-        # Loop para rodar cada método e cronometrar
-        for nome, funcao in lista_metodos.items():
+        # Loop para rodar cada método
+        for nome_metodo, funcao in lista_metodos.items():
             start = time.time()
             
-            # Executa a função matemática pura para todos os problemas carregados
-            # (Não geramos relatório de texto aqui, focamos apenas no cálculo)
-            for p in self.problemas:
+            # Executa para cada problema na lista
+            for i, p in enumerate(self.problemas):
                 if self.tipo_problema == "PVI":
-                    funcao(p['func'], p['y0'], p['interval'], p['h'])
+                    x_res, y_res = funcao(p['func'], p['y0'], p['interval'], p['h'])
                 else: # PVC
-                    funcao(p['func'], p['y0'], p['interval'], 
-                           p['target'], p['h'], p['n'], p['params'])
+                    x_res, y_res = funcao(p['func'], p['y0'], p['interval'], 
+                                          p['target'], p['h'], p['n'], p['params'])
+                
+                # Salva os dados para o gráfico de linhas
+                solucoes_por_problema[i][nome_metodo] = (x_res, y_res)
             
             end = time.time()
             tempo_total = end - start
             
-            nomes.append(nome)
+            nomes.append(nome_metodo)
             tempos.append(tempo_total)
-            print(f"> {nome}: {tempo_total:.6f} s")
+            print(f"> {nome_metodo}: {tempo_total:.6f} s")
 
-        # Chamar o módulo de gráficos
-        nome_arquivo = f"comparativo_{self.tipo_problema.lower()}.png"
-        graficos.gerar_grafico_comparativo(nomes, tempos, nome_arquivo)
+        # 1. Gerar Gráfico de Barras (Tempo)
+        nome_arquivo_tempo = f"comparativo_{self.tipo_problema.lower()}.png"
+        graficos.gerar_grafico_comparativo(nomes, tempos, nome_arquivo_tempo)
+        
+        # 2. Gerar Gráficos de Linha (Soluções)
+        print("\nGerando gráficos das soluções...")
+        for i, dados_metodos in solucoes_por_problema.items():
+            graficos.gerar_grafico_solucoes(dados_metodos, id_problema=i)
+            
+        print("\nComparativos finalizados com sucesso!")
+
+    def run_all_methods(self):
+        """
+        Executa todos os métodos disponíveis para o tipo configurado (PVI ou PVC)
+        e gera os arquivos de saída individuais para cada um.
+        """
+        print(f"\n--- Executando TODOS os métodos para {self.tipo_problema} ---")
+        
+        if self.tipo_problema == "PVI":
+            # Lista de (Nome do Método, Função Wrapper)
+            metodos_pvi = [
+                ("Método de Euler", self.run_euler),
+                ("Método de Heun", self.run_heun),
+                ("Euler Modificado", self.run_euler_modificado),
+                ("Método de Ralston", self.run_ralston),
+                ("Runge-Kutta 3ª Ordem", self.run_rk3),
+                ("Runge-Kutta 4ª Ordem", self.run_rk4)
+            ]
+            
+            for nome, funcao in metodos_pvi:
+                print(f"> Rodando {nome}...")
+                funcao() # Chama o wrapper que já gera o arquivo .txt
+                
+        elif self.tipo_problema == "PVC":
+            metodos_pvc = [
+                ("Shooting Method", self.run_shooting),
+                ("Diferenças Finitas", self.run_finite_differences)
+            ]
+            
+            for nome, funcao in metodos_pvc:
+                print(f"> Rodando {nome}...")
+                funcao()
+
+        print(f"\n--- Todos os relatórios foram gerados na pasta 'output' ---")
 
     # --- Wrappers para PVI ---
     def run_euler(self):
